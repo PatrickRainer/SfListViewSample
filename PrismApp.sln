@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismApp.Mobile", "PrismApp.Mobile\PrismApp.Mobile\PrismApp.Mobile.csproj", "{CAA24B16-6400-4F23-849F-CB77C008A30B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismApp.Mobile.Android", "PrismApp.Mobile\PrismApp.Mobile.Android\PrismApp.Mobile.Android.csproj", "{55998F99-BAE2-4CC7-BBCB-A7AE97A12F8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismApp.Mobile.iOS", "PrismApp.Mobile\PrismApp.Mobile.iOS\PrismApp.Mobile.iOS.csproj", "{D27FCDA3-1AD9-4F58-B3EC-7E18654671D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAA24B16-6400-4F23-849F-CB77C008A30B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA24B16-6400-4F23-849F-CB77C008A30B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA24B16-6400-4F23-849F-CB77C008A30B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA24B16-6400-4F23-849F-CB77C008A30B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55998F99-BAE2-4CC7-BBCB-A7AE97A12F8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55998F99-BAE2-4CC7-BBCB-A7AE97A12F8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55998F99-BAE2-4CC7-BBCB-A7AE97A12F8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55998F99-BAE2-4CC7-BBCB-A7AE97A12F8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D27FCDA3-1AD9-4F58-B3EC-7E18654671D7}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{D27FCDA3-1AD9-4F58-B3EC-7E18654671D7}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{D27FCDA3-1AD9-4F58-B3EC-7E18654671D7}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{D27FCDA3-1AD9-4F58-B3EC-7E18654671D7}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal

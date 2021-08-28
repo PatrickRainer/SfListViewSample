@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PrismApp.Mobile"
+             xmlns:viewModels="clr-namespace:PrismApp.Mobile.ViewModels"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:converters="clr-namespace:PrismApp.Mobile.Commands"
+             x:Class="PrismApp.Mobile.Views.MainPage"
+             Title="{Binding Title}">
+    <ContentPage.Resources>
+        <converters:ItemTappedEventArgsConverter x:Key="ItemTappedEventArgsConverter"/>
+    </ContentPage.Resources>
+    <StackLayout>
+        <Button Text="Prism Delegate Command"
+                Command="{Binding DelegateButtonCommand}"/>
+        <ListView>
+            <ListView.Behaviors>
+                <prism:EventToCommandBehavior EventName="ItemTapped"
+                                              Command="{Binding ItemTappedCommand}"
+                                              CommandParameter="MyParameter"
+                                              EventArgsConverter="{StaticResource ItemTappedEventArgsConverter}"
+                                              EventArgsConverterParameter="Item"/>
+            </ListView.Behaviors>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
