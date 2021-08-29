@@ -2,6 +2,7 @@
 using Prism.Navigation;
 using Prism.Services;
 using PrismApp.Mobile.Commands;
+using PrismApp.Mobile.Services;
 using PrismApp.Mobile.Views;
 using Unity;
 
@@ -11,11 +12,18 @@ namespace PrismApp.Mobile.ViewModels
     {
         readonly IPageDialogService _pageDialogService;
         string _title;
+        string _userName;
 
         public string Title
         {
             get => _title;
             set => SetProperty(ref _title, value);
+        }
+
+        public string UserName
+        {
+            get => _userName;
+            set => SetProperty(ref _userName, value);
         }
 
         public DelegateCommand<object> DelegateButtonCommand
@@ -28,14 +36,14 @@ namespace PrismApp.Mobile.ViewModels
         public DelegateCommand<object> NewPageCommand { get; private set; }
         
 
-        public MainPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService) : base(navigationService)
+        public MainPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService, IUser user) : base(navigationService)
         {
             _pageDialogService = pageDialogService;
             Title = "Main Page";
             DelegateButtonCommand = new DelegateCommand<object>(Submit, CanSubmit);
             PageDialogCommand = new DelegateCommand<object>(PageDialogCommandExecute);
             NewPageCommand = new DelegateCommand<object>(NewPageCommandExecute);
-            
+            UserName = user.Name;
         }
 
         void NewPageCommandExecute(object obj)

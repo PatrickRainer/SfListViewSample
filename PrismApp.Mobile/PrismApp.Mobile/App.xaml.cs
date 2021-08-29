@@ -2,6 +2,7 @@
 using System.Runtime.CompilerServices;
 using Prism;
 using Prism.Ioc;
+using PrismApp.Mobile.Services;
 using PrismApp.Mobile.ViewModels;
 using PrismApp.Mobile.Views;
 using Xamarin.Forms;
@@ -28,6 +29,7 @@ namespace PrismApp.Mobile
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<SecondPage, SecondPageViewModel>();
+            containerRegistry.RegisterSingleton<IUser, User>();
         }
 
         protected override void OnStart()

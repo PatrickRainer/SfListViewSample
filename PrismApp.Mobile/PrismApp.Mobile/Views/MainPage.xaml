@@ -12,6 +12,8 @@
         <converters:ItemTappedEventArgsConverter x:Key="ItemTappedEventArgsConverter"/>
     </ContentPage.Resources>
     <StackLayout>
+        <Label Text="Username:"/>
+        <Label Text="{Binding UserName}"/>
         <Button Text="Prism Delegate Command"
                 Command="{Binding DelegateButtonCommand}"/>
         <Button Text="Page Dialog"
