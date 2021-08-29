@@ -14,6 +14,10 @@
     <StackLayout>
         <Button Text="Prism Delegate Command"
                 Command="{Binding DelegateButtonCommand}"/>
+        <Button Text="Page Dialog"
+                Command="{Binding PageDialogCommand}"/>
+        <Button Text="Navigate to new Page"
+                Command="{Binding NewPageCommand}"/>
         <ListView>
             <ListView.Behaviors>
                 <prism:EventToCommandBehavior EventName="ItemTapped"
