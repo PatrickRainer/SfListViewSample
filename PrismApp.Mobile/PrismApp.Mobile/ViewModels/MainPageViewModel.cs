@@ -3,6 +3,7 @@ using Prism.Navigation;
 using Prism.Services;
 using PrismApp.Mobile.Commands;
 using PrismApp.Mobile.Views;
+using Unity;
 
 namespace PrismApp.Mobile.ViewModels
 {
@@ -24,6 +25,7 @@ namespace PrismApp.Mobile.ViewModels
         }
 
         public DelegateCommand<object> PageDialogCommand { get; private set; }
+        public DelegateCommand<object> NewPageCommand { get; private set; }
         
 
         public MainPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService) : base(navigationService)
@@ -32,6 +34,13 @@ namespace PrismApp.Mobile.ViewModels
             Title = "Main Page";
             DelegateButtonCommand = new DelegateCommand<object>(Submit, CanSubmit);
             PageDialogCommand = new DelegateCommand<object>(PageDialogCommandExecute);
+            NewPageCommand = new DelegateCommand<object>(NewPageCommandExecute);
+            
+        }
+
+        void NewPageCommandExecute(object obj)
+        {
+            NavigationService.NavigateAsync("SecondPage");
         }
 
         void PageDialogCommandExecute(object obj)
