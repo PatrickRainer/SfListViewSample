@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xForms="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             x:Class="ClassicXamarin.Mobile.ListViewPage" x:Name="ThisPage">
+    <ContentPage.BindingContext>
+        <x:Reference Name="ThisPage"></x:Reference>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="New User"/>
+            <Entry/>
+           <Button Text="Add item to list"/>
+           <xForms:SfListView ItemsSource="{Binding Users}"
+                              SelectedItems="{Binding SelectedItems}"
+                              SelectionMode="Multiple"/>
+            <xForms:SfListView ItemsSource="{Binding SelectedItems}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

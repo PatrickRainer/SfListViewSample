@@ -13,5 +13,10 @@ namespace ClassicXamarin.Mobile
         {
             InitializeComponent();
         }
+
+        void Button_OnClicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new ListViewPage());
+        }
     }
 }
