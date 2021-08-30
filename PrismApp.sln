@@ -4,7 +4,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismApp.Mobile", "PrismApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismApp.Mobile.Android", "PrismApp.Mobile\PrismApp.Mobile.Android\PrismApp.Mobile.Android.csproj", "{55998F99-BAE2-4CC7-BBCB-A7AE97A12F8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismApp.Mobile.iOS", "PrismApp.Mobile\PrismApp.Mobile.iOS\PrismApp.Mobile.iOS.csproj", "{D27FCDA3-1AD9-4F58-B3EC-7E18654671D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicXamarin.Mobile", "ClassicXamarin.Mobile\ClassicXamarin.Mobile\ClassicXamarin.Mobile.csproj", "{B956F260-2F72-4189-965E-5D5E88FFBA5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicXamarin.Mobile.Android", "ClassicXamarin.Mobile\ClassicXamarin.Mobile.Android\ClassicXamarin.Mobile.Android.csproj", "{8CBF0491-0206-44D5-BFC3-51B4261CC321}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,9 +22,13 @@ Global
 		{55998F99-BAE2-4CC7-BBCB-A7AE97A12F8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55998F99-BAE2-4CC7-BBCB-A7AE97A12F8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55998F99-BAE2-4CC7-BBCB-A7AE97A12F8F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D27FCDA3-1AD9-4F58-B3EC-7E18654671D7}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
-		{D27FCDA3-1AD9-4F58-B3EC-7E18654671D7}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
-		{D27FCDA3-1AD9-4F58-B3EC-7E18654671D7}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
-		{D27FCDA3-1AD9-4F58-B3EC-7E18654671D7}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
+		{B956F260-2F72-4189-965E-5D5E88FFBA5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B956F260-2F72-4189-965E-5D5E88FFBA5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B956F260-2F72-4189-965E-5D5E88FFBA5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B956F260-2F72-4189-965E-5D5E88FFBA5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CBF0491-0206-44D5-BFC3-51B4261CC321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CBF0491-0206-44D5-BFC3-51B4261CC321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CBF0491-0206-44D5-BFC3-51B4261CC321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CBF0491-0206-44D5-BFC3-51B4261CC321}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
