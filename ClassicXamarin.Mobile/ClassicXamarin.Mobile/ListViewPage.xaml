@@ -12,9 +12,13 @@
             <Label Text="New User"/>
             <Entry/>
            <Button Text="Add item to list"/>
+            <Label Text="All Users"
+                   FontSize="Large"/>
            <xForms:SfListView ItemsSource="{Binding Users}"
                               SelectedItems="{Binding SelectedItems}"
                               SelectionMode="Multiple"/>
+            <Label Text="Selected Users"
+                   FontSize="Large"/>
             <xForms:SfListView ItemsSource="{Binding SelectedItems}"/>
         </StackLayout>
     </ContentPage.Content>
