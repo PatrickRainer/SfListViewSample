@@ -11,6 +11,7 @@
 
     <ItemGroup>
         <PackageReference Include="Prism.Unity.Forms" Version="8.1.97" />
+        <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="19.2.0.57" />
         <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     </ItemGroup>
 

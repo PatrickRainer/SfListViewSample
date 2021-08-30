@@ -34,6 +34,7 @@ namespace PrismApp.Mobile.ViewModels
 
         public DelegateCommand<object> PageDialogCommand { get; private set; }
         public DelegateCommand<object> NewPageCommand { get; private set; }
+        public DelegateCommand<object> SfListViewPageCommand { get; private set; }
         
 
         public MainPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService, IUser user) : base(navigationService)
@@ -43,7 +44,13 @@ namespace PrismApp.Mobile.ViewModels
             DelegateButtonCommand = new DelegateCommand<object>(Submit, CanSubmit);
             PageDialogCommand = new DelegateCommand<object>(PageDialogCommandExecute);
             NewPageCommand = new DelegateCommand<object>(NewPageCommandExecute);
+            SfListViewPageCommand = new DelegateCommand<object>(OnSfListViewPageCommand);
             UserName = user.Name;
+        }
+
+        void OnSfListViewPageCommand(object obj)
+        {
+            NavigationService.NavigateAsync(nameof(SfListViewPage));
         }
 
         void NewPageCommandExecute(object obj)

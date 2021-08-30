@@ -29,6 +29,7 @@ namespace PrismApp.Mobile
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<SecondPage, SecondPageViewModel>();
+            containerRegistry.RegisterForNavigation<SfListViewPage, ListViewPageViewModel>();
             containerRegistry.RegisterSingleton<IUser, User>();
         }
 

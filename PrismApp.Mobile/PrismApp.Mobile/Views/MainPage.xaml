@@ -20,6 +20,8 @@
                 Command="{Binding PageDialogCommand}"/>
         <Button Text="Navigate to new Page"
                 Command="{Binding NewPageCommand}"/>
+        <Button Text="Navigate to SFListView Page"
+                Command="{Binding SfListViewPageCommand}"/>
         <ListView>
             <ListView.Behaviors>
                 <prism:EventToCommandBehavior EventName="ItemTapped"
