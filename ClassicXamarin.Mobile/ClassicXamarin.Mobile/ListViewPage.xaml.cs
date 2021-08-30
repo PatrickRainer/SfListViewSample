@@ -7,7 +7,7 @@ namespace ClassicXamarin.Mobile
     public partial class ListViewPage
     {
         ObservableCollection<string> _users;
-        ObservableCollection<string> _selectedItems;
+        ObservableCollection<object> _selectedItems;
 
         public ListViewPage()
         {
@@ -31,7 +31,7 @@ namespace ClassicXamarin.Mobile
             }
         }
 
-        public ObservableCollection<string> SelectedItems
+        public ObservableCollection<object> SelectedItems
         {
             get => _selectedItems;
             set
