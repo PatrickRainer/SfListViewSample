@@ -19,6 +19,8 @@ namespace ClassicXamarin.Mobile
                 "Fritz",
                 "Manuel"
             };
+
+            SelectedItems = new ObservableCollection<object>();
         }
 
         public ObservableCollection<string> Users
