@@ -7,6 +7,8 @@
     <StackLayout>
         <Button Text="Open Listview Page"
                 Clicked="Button_OnClicked"/>
+        <Button Text="Open second ListView Page"
+                Clicked="Second_ListViewPage_Clicked"></Button>
     </StackLayout>
 
 </ContentPage>

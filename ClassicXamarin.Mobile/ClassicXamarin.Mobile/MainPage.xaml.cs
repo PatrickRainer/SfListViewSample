@@ -18,5 +18,10 @@ namespace ClassicXamarin.Mobile
         {
             Navigation.PushModalAsync(new ListViewPage());
         }
+
+        void Second_ListViewPage_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new ListViewPage2());
+        }
     }
 }

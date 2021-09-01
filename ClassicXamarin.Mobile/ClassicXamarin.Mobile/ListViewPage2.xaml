@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xForms="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             x:Class="ClassicXamarin.Mobile.ListViewPage2" x:Name="SecondPage">
+    <ContentPage.BindingContext>
+        <x:Reference Name="SecondPage" />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Person Name" />
+            <Entry Text="{Binding Person.Name}" />
+            <xForms:SfListView SelectionMode="Multiple"
+                               ItemsSource="{Binding BooksProvider}"
+                               SelectedItems="{Binding SelectedItems}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
