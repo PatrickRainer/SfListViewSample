@@ -13,7 +13,7 @@
             <Entry Text="{Binding Person.Name}" />
             <xForms:SfListView SelectionMode="Multiple"
                                ItemsSource="{Binding BooksProvider}"
-                               SelectedItems="{Binding SelectedItems}" />
+                               SelectedItems="{Binding Person.Books}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
